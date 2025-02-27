@@ -11,6 +11,7 @@ import FlexLayout from './src/components/FlexLayout';
 import ScrollViewComponent from './src/components/ScrollViewComponent';
 import StylingDemo from './src/components/Styling';
 import TextInputComponent from './src/components/TextInput';
+import TouchableComponent from './src/components/Touchable';
 
 function App(): React.JSX.Element {
   return (
@@ -25,6 +26,7 @@ function App(): React.JSX.Element {
           <ScrollViewComponent />
           <StylingDemo />
           <FlexLayout />
+          <TouchableComponent />
         </SafeAreaView>
       </ScrollView>
     </>

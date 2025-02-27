@@ -10,6 +10,12 @@ function FlexLayout() {
         <View style={[styles.box, styles.blueBox]}></View>
         <View style={[styles.box, styles.greenBox]}></View>
       </View>
+      <Text>Cross Axis (Column)</Text>
+      <View style={styles.columnContainer}>
+        <View style={[styles.box, styles.redBox]}></View>
+        <View style={[styles.box, styles.blueBox]}></View>
+        <View style={[styles.box, styles.greenBox]}></View>
+      </View>
     </View>
   );
 }
@@ -42,6 +48,12 @@ const styles = StyleSheet.create({
   },
   greenBox: {
     backgroundColor: 'green',
+  },
+  columnContainer: {
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    marginBottom: 50,
+    height: 200,
   },
 });
 
